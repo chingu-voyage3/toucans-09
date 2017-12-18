@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+body {
+  font-family: Monospace, sans-serif;
+  border: 1px lightgrey solid;
+  border-radius: 3px;
+  margin: 0.2em;
+  padding: 0 .25em 0 .75em;
+}
+header {
+  background-color: hsla(340, 10%, 50%, 0.5);
+  margin: 0 -4px 0 -12px;
+}
+footer {
+  padding: 1.5em 0 1.5em 0;
+  border-top: 1px lightgrey solid;
+}
+footer > div {
+
+}
+h2, h3 {
+  margin-bottom: .75em;
+}
+section {
+  padding-top: .5em;
+}
+section > h2 {
+  padding-top: 1em;
+}
+ul {
+  list-style: none;
+}
+li:first-child {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.cols {
+  /*border: 2px solid magenta;*/
+  display: flex;
+  flex-direction: column wrap;
+  justify-content: space-around;
+}
+.picIcon {
+  background: lightblue;
+  height: 140px;
+  padding-top: 50px;
+  text-align: center;
+  width: 250px;
+}
+.pickers {
+  display: flex;
+  flex-direction: column wrap;
+}
+.pickers label {
+  flex-basis: 15em;
+}
+.pickers input {
+  flex-basis: 120em;
+}
+.pickers select {
+  flex-basis: 120em;
+}
+.placeholdIcon {
+  background: lightblue;
+  height: 40px;
+  width: 40px;
+}
+.rows {
+  display: flex;
+  flex-flow: row wrap;
+}
+#hospitalityInfo aside > .placeholdIcon, h3 {
+  padding-top: .5em;
+}
+#siteBanner {
+  padding: 2em 0 1em .25em;
+}
+#siteMap {
+  padding: 3em 0em 2em 1.5em;
+}
+#siteMap > * {
+  justify-content: space-around;
+}
+#siteMap ul li {
+  overflow-wrap: break-word;
+  width: 70%;
+}
+#tripFinder {
+  border-radius: 3px;
+  color: hsla(0, 5%, 25%, .8);
+  display: flex;
+  flex-direction: column;
+  padding: 1em 1em 1.5em 0;
+}
+#tripFinder input, select {
+  border: 1px solid lightgrey;
+  height: 3em;
+  padding-left: 0.5em;
+}
+#tripFinder #Search {
+  background-color: hsla(0, 100%, 60%, 0.7);
+  border-radius: 2px;
+  border: none;
+  color: white;
+  font-size: 1.15em;
+  height: 2em;
+  margin-top: 1.5em;
+}
+#tripFuture {
+  border-bottom: 1px lightgrey solid;
+  padding: 3em 2em 5em 0;
+}
+#tripFuture input {
+  border: 2px hsla(180, 50%, 30%, .9) solid;
+  border-radius: 5px;
+  color: hsla(180, 60%, 30%, 1);
+  font-size: 1.1em;
+  padding: 0 .5em 0 .5em;
+  width: 120px;
+  height: 50px;
+}
